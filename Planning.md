@@ -68,3 +68,17 @@ SecureDevGuardian/
 ├── .env.example
 ├── .gitignore
 └── README.md
+
+
+SecureDevGuardian | Node.js, Express.js, Python, React, SQLite, Docker, GitHub Actions
+
+Built a DevSecOps SSDLC automation platform that statically analyzes Node.js/Express.js applications for OWASP-aligned security vulnerabilities across 10 security domains including JWT misconfiguration, CORS policy, authentication gaps, input validation, secret exposure, and dependency vulnerabilities.
+Implemented an AST-based static analysis engine using Acorn to parse JavaScript source files and detect insecure coding patterns without executing the target application.
+Developed a vulnerability triage and tracking system backed by SQLite that assigns unique IDs, severity levels (Critical/High/Medium/Low), and resolution status to findings, enabling teams to monitor and manage open/mitigated issues over time.
+Engineered a risk scoring engine that produces a 0–100 security score with weighted severity calculation across all findings, generating prioritized HTML and JSON security reports.
+Containerized the platform using Docker and implemented GitHub Actions CI/CD integration that automatically triggers security scans on every push and fails builds when critical vulnerabilities are detected, enforcing shift-left security practices.
+Authored a Python-based secret scanner to detect exposed API keys, AWS credentials, MongoDB URIs, and JWT secrets across source files and environment configurations.
+
+Built an SSDLC automation platform that statically analyzes Node.js apps 
+for OWASP vulnerabilities, tracks findings with severity triage, and 
+enforces security gates via Docker and GitHub Actions CI/CD.
